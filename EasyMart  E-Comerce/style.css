@@ -1,0 +1,306 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    .poppins-regular {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #1d232c;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+    color: #1d232c;
+}
+
+.navbar-menu-toggle {
+    display: none;
+}
+
+
+/*side navbar */
+
+.side-navbar {
+    background-color: #1d232c;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 2s;
+
+}
+
+.side-navbar-link {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.side-navbar-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar-links a:hover {
+    text-decoration: underline
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.header button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #1d232c;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.service {
+    padding: 20px;
+}
+
+.service-container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-container-2 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+
+
+}
+
+.service-container-2 div {
+    background-color: #f2f4f2;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.new-arrival {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.new-arrival-container {
+    position: relative;
+    flex-basis: 20%;
+}
+
+.btn {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    color: #1d232c;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    border-radius: 10px;
+    border: none;
+
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    gap: 10px;
+}
+
+.news input{
+    margin-top: 15px;
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid 3px;
+}
+.news button{
+    
+    color: whitesmoke;
+    background-color: #1d232c;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.last{
+    background-color: #1d232c;
+    color: #1d232c;
+    padding: 35px;
+    color: white;
+    gap: 15px;
+
+}
+
+.footer{
+    margin-top: 20px;
+    color: white;
+    background-color:#1d232c;
+    padding: 50px;
+    gap: 20px; 
+}
+.product-sections{
+    margin-top: 20px;
+}
+
+.input{
+    width:80% ;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.input input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+.input input:focus{
+    outline: none;
+}
+
+.products{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    
+}
+.product-section{
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.product-section img{
+    border-radius: 10px;
+}
+
+.contact-heading{
+    background-color: #1d232c;
+    height: 70%;
+    width: 70%;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 50px;
+    color: white;
+   
+    
+}
+.name-bar{
+    margin: 10px;
+}
+.name-bar input{
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+.name-bar input:hover{
+    outline: none;
+}
+
+.email-bar{
+    margin: 10px;
+}
+.email-bar input{
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+.email-bar input:hover{
+    outline: none;
+}
+.Message-bar{
+    margin: 10px;
+}
+.Message-bar input{
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    height: 60px;
+  }
+
+  .Message-bar input{
+    outline: none;
+  }
+
+  .contact-heading button{
+    margin: 10px;
+    padding: 5px;
+    background-color: blue;
+    color: white; 
+    border: none; 
+    border-radius: 5px;
+}
+@media screen and (max-width:700px) {
+    .navbar-menu-toggle {
+        display: block;
+
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    
+    .service-container-1 {
+        display: none;
+    }
+
+    .service-container-2 {
+        flex-direction: column;
+    }
+
+    .contact-heading{
+        margin: 20px;
+    }
+    
+
+}

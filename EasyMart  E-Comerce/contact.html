@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyMart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!--nav bar-->
+    <nav class="navbar">
+        <h1>Easy-Mart</h1>
+
+        <div class="navbar-links">
+            <p><a class="navbar-link" href="index.html">Home</a></p>
+            <p><a class="navbar-link" href="collecton.html">Collections</a></p>
+            <p><a class="navbar-link" href="contact.html">Contact</a></p>
+        </div>
+        <div class="navbar-menu-toggle" onclick="show()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+
+    <!--side navbor-->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="hide()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p><a class="side-navbar-link" href="index.html">Home</a></p>
+            <p><a class="side-navbar-link" href="collecton.html">Collections</a></p>
+            <p><a class="side-navbar-link" href="contact.html">Contact</a></p>
+        </div>
+    </div>
+
+    <div class="contact-heading">
+       
+            <h2>Contact Us</h2>
+        
+        <div class="name-bar">
+            <p style="margin: 2px;">Name:</p>
+            <input type="text" id="input-1">
+        </div>
+        <div class="email-bar">
+            <p style="margin: 2px;">Email:</p>
+            <input type="text" id="input-2">
+        </div>
+        <div class="Message-bar">
+            <p style="margin: 2px;">Message:</p>
+            <input type="" id="input-3">
+        </div>
+        <button onclick="showme()">Submit</button>
+
+
+    </div>
+
+
+
+
+    <div class="footer">
+        <div class="footer-container-1">
+            <div class="footer-box" style="margin-bottom: 7px;">
+                <h2 class="heading" style="margin-bottom: 7px;">Easy-Mart</h2>
+                <p style="margin-bottom: 7px;">An easy mart is a convenient and accessible store designed to provide
+                    customers with a quick and
+                    hassle-free shopping experience. </p>
+                <div class="footer-icon">
+                    <i class="fa-brands fa-instagram" style="color: white;"></i>
+                    <i class="fa-brands fa-twitter" style="color: white;"></i>
+                    <i class="fa-brands fa-facebook" style="color: white;"></i>
+                </div>
+            </div>
+
+        </div>
+        <p>EasyMart2023@gamil.com</p>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+
+    <script>
+        var input1 = document.getElementById("input-1").value
+        var input2 = document.getElementById("input-2").value
+        var input3 = document.getElementById("input-2").value
+
+      function showme()
+      {
+        if(input1 || input2 || input3)
+      {
+        alert("Please fill all field")
+      }
+
+      else{
+        alert("sumbited Succesfully!!")
+      }
+      }
+    </script>
+</body>
+
+</html>
